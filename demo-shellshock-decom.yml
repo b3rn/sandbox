@@ -11,6 +11,5 @@
       aws secret_key: "{{ ec2_secret_key }}"
       count_tag:
         Name: demo_jbersuder_shellshock
-      exact_count: 0
       state: stopped
 
