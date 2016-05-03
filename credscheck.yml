@@ -1,4 +1,6 @@
 ---
 - hosts: localhost
+  vars_files:
+    - group_vars/all
   tasks:
-  - shell: echo "{{ ec2_access_key }}" "{{ ec2_secret_key }}"
+    - shell: echo '{{ ec2_access_key }}' '{{ ec2_secret_key }}'
