@@ -1,3 +1,4 @@
 ---
 - hosts: localhost
-  shell: echo "{{ ec2_access_key }}" "{{ ec2_secret_key }}"
+  tasks:
+  - shell: echo "{{ ec2_access_key }}" "{{ ec2_secret_key }}"
