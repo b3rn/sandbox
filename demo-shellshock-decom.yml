@@ -9,10 +9,10 @@
     ec2_hosts: tag_Name_demo_{{ tower_user_name }}_shellshock
 
   tasks:
-  ec2: 
-    region: "{{ ec2_region }}"
-    instance_ids: "{{ item }}"
-    state: absent
-    wait: True
-  with_items: "{{ hostvars[inventory_hostname]['ansible_ec2_instance_id'] }}"
+  - ec2: 
+      region: "{{ ec2_region }}"
+     instance_ids: "{{ item }}"
+     state: absent
+     wait: True
+   with_items: "{{ hostvars[inventory_hostname]['ansible_ec2_instance_id'] }}"
 
