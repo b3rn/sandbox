@@ -1,0 +1,7 @@
+---
+- local_action:
+    module: ec2
+    region: us-east-1
+    instance_tags:
+        Name: demo_jbersuder_shellshock
+    state: absent
