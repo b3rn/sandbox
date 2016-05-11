@@ -11,8 +11,6 @@
 - name: terminate hosts
   hosts: "{{ ec2_hosts }}" 
   gather_facts: false
-  connection: local  
-
   vars:
     ec2_hosts: tag_Name_demo_{{ tower_user_name }}_shellshock
 
