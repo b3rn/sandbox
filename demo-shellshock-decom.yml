@@ -21,7 +21,7 @@
     ec2: >
       region="{{ ec2_region }}"
       instance_ids="{{ item }}"
-      state=absent
+      state=stopped
       wait=True
     with_items: "{{hostvars[inventory_hostname]['ansible_ec2_instance_id']}}" 
 
