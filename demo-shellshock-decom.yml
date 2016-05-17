@@ -5,14 +5,14 @@
 
   vars:
     ec2_region: us-east-1
-    ec2_hosts: tag_Name_demo_{{ tower_user_name }}_shellshock
+    ec2_hosts: tag_Name_demo_{{ tower_user_name }}
 
 
 - name: terminate hosts
   hosts: "{{ ec2_hosts }}" 
   gather_facts: false
   vars:
-    ec2_hosts: tag_Name_demo_{{ tower_user_name }}_shellshock
+    ec2_hosts: tag_Name_demo_{{ tower_user_name }}
 
   tasks:
   - name: terminate EC2 hosts
