@@ -1,19 +1,14 @@
 ---
-- hosts: ec2
-  gather_facts: True
+- hosts: localhost
   connection: local
-  vars_file:
-  - group_vars/all
+  gather_facts: False
+
+  vars_files:
+    - group_vars/all
 
   vars: 
     - ec2_region: 'us-east-1'
   tasks:
-    - name: Gather EC2 facts
-      local_action: ec2_facts
- 
-    - debug: var=hostvars[inventory_hostname]
-    - debug: msg="{{ hostvars[inventory_hostname]['ec2_id'] }}"
- 
     - name: Terminate instances 
       local_action: ec2
         state='absent'
