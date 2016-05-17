@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+
+  vars_files:
+    - group_vars/all
+
+  vars: 
+    - ec2_region: 'us-east-1'
+  tasks:
+    - name: Terminate instances 
+      local_action: ec2
+        state='absent'
+        instance_ids='{{ ec2_id }}'
+        region='{{ ec2_region }}'
+        wait=True
