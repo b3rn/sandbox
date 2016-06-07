@@ -21,6 +21,8 @@
      count="{{ ec2_instance_count }}"
      wait=true
     register: ec2
+    async: 200
+    poll: 20
 
   - name: Launch database instance
     ec2: >
@@ -35,6 +37,8 @@
      count="1"
      wait=true
     register: ec2
+    async: 200
+    poll: 20
 
   - name: Launch load balancing instance
     ec2: >
@@ -49,6 +53,8 @@
      count="1"
      wait=true
     register: ec2
+    async: 200
+    poll: 20
 
   - name: Launch monitoring instance
     ec2: >
@@ -63,6 +69,8 @@
      count="1"
      wait=true
     register: ec2
+    async: 200
+    poll: 20
 
 
   - name: Wait for SSH to come up
