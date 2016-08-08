@@ -5,7 +5,7 @@
 
   vars:
     ec2_region: us-east-1
-    ec2_hosts: tag_Name_demo_{{ tower_user_name }}
+    ec2_hosts: "tag_Name_demo_{{ tower_user_name }}"
 
   tasks:
   - name: gather facts 
@@ -17,7 +17,7 @@
   connection: local  
 
   vars:
-    ec2_hosts: tag_Name_demo_{{ tower_user_name }}
+    ec2_hosts: "tag_Name_demo_{{ tower_user_name }}"
 
   tasks:
   - name: terminate EC2 hosts
@@ -26,5 +26,5 @@
       instance_ids="{{ item }}"
       state=absent
       wait=True
-    with_items: hostvars[inventory_hostname]['ansible_ec2_instance_id'] 
+    with_items: "{{hostvars[inventory_hostname]['ansible_ec2_instance_id']}}"
 
