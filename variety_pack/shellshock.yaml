@@ -1,0 +1,16 @@
+- name: deploy cent7 machine
+  ec2:
+    assign_public_ip: yes
+    ebs_optimized: yes
+    group: "{{ ec2_security_group }}"
+    image: ami-6c1e8f04
+    instance_tags: "{'uses':'shellshock','Name':'test_''{{ tower_user_name}}'}"
+    instance_type: "{{ ec2_type }}"
+    key_name: "{{ ec2_key }}"
+    region: "{{ ec2_region }}"
+    volumes:
+    - device_name: /dev/sda1
+      delete_on_termination: yes
+      volume_type: gp2
+      volume_size: 40
+    vpc_subnet_id: "{{ ec2_vpc_id }}"

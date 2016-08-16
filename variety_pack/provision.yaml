@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_files:
+  - vars/all.yaml
+
+  tasks:
+  - include: centos.yaml
+  - include: shellshock.yaml
+
