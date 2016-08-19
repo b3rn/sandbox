@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: check for root login denial
+    lineinfile: dest=/etc/ssh/sshd_config state=present regexp='^PermitRootLogin No' backup=yes
