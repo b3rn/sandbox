@@ -1,0 +1,54 @@
+2016-09-14 16:50:25,232 p=7621 u=jon |  PLAY [localhost] ***************************************************************
+2016-09-14 16:50:25,290 p=7621 u=jon |  TASK [print instance ids] ******************************************************
+2016-09-14 16:50:25,340 p=7621 u=jon |  [DEPRECATION WARNING]: Skipping task due to undefined Error, in the future this will be a fatal error.: 'ec2' is undefined.
+This feature will be removed in a future 
+release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2016-09-14 16:50:25,364 p=7621 u=jon |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'item' is undefined\n\nThe error appears to have been in '/Users/jon/src/sandbox/printids.yaml': line 7, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n  - name: print instance ids\n    ^ here\n"}
+2016-09-14 16:50:25,374 p=7621 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-14 16:50:25,374 p=7621 u=jon |  PLAY RECAP *********************************************************************
+2016-09-14 16:50:25,375 p=7621 u=jon |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-14 16:51:14,447 p=7657 u=jon |  PLAY [localhost] ***************************************************************
+2016-09-14 16:51:14,488 p=7657 u=jon |  TASK [print instance ids] ******************************************************
+2016-09-14 16:51:14,535 p=7657 u=jon |  [DEPRECATION WARNING]: Skipping task due to undefined Error, in the future this will be a fatal error.: 'ec2' is undefined.
+This feature will be removed in a future 
+release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2016-09-14 16:51:14,556 p=7657 u=jon |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'item' is undefined\n\nThe error appears to have been in '/Users/jon/src/sandbox/printids.yaml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: print instance ids\n      ^ here\n"}
+2016-09-14 16:51:14,563 p=7657 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-14 16:51:14,564 p=7657 u=jon |  PLAY RECAP *********************************************************************
+2016-09-14 16:51:14,564 p=7657 u=jon |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-14 16:52:40,578 p=7735 u=jon |  PLAY [localhost] ***************************************************************
+2016-09-14 16:52:40,612 p=7735 u=jon |  TASK [print instance ids] ******************************************************
+2016-09-14 16:52:40,674 p=7735 u=jon |  [DEPRECATION WARNING]: Skipping task due to undefined Error, in the future this will be a fatal error.: 'dict object' has no attribute 'ansible_ec2_instance_id'.
+This
+ feature will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2016-09-14 16:52:40,691 p=7735 u=jon |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'item' is undefined\n\nThe error appears to have been in '/Users/jon/src/sandbox/printids.yaml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: print instance ids\n      ^ here\n"}
+2016-09-14 16:52:40,697 p=7735 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-14 16:52:40,698 p=7735 u=jon |  PLAY RECAP *********************************************************************
+2016-09-14 16:52:40,698 p=7735 u=jon |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-14 16:53:03,697 p=7774 u=jon |  PLAY [localhost] ***************************************************************
+2016-09-14 16:53:03,726 p=7774 u=jon |  TASK [print instance ids] ******************************************************
+2016-09-14 16:53:03,772 p=7774 u=jon |  [DEPRECATION WARNING]: Skipping task due to undefined Error, in the future this will be a fatal error.: 'dict object' has no attribute 'ansible_ec2_instance_id'.
+This
+ feature will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2016-09-14 16:53:03,794 p=7774 u=jon |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'item' is undefined\n\nThe error appears to have been in '/Users/jon/src/sandbox/printids.yaml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: print instance ids\n      ^ here\n"}
+2016-09-14 16:53:03,799 p=7774 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-14 16:53:03,800 p=7774 u=jon |  PLAY RECAP *********************************************************************
+2016-09-14 16:53:03,800 p=7774 u=jon |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-14 16:53:56,527 p=7862 u=jon |  PLAY [localhost] ***************************************************************
+2016-09-14 16:53:56,566 p=7862 u=jon |  TASK [print instance ids] ******************************************************
+2016-09-14 16:53:56,616 p=7862 u=jon |  [DEPRECATION WARNING]: Skipping task due to undefined Error, in the future this will be a fatal error.: 'dict object' has no attribute 'ansible_ec2_instance_id'.
+This
+ feature will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2016-09-14 16:53:56,641 p=7862 u=jon |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'item' is undefined\n\nThe error appears to have been in '/Users/jon/src/sandbox/printids.yaml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: print instance ids\n      ^ here\n"}
+2016-09-14 16:53:56,651 p=7862 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-14 16:53:56,651 p=7862 u=jon |  PLAY RECAP *********************************************************************
+2016-09-14 16:53:56,651 p=7862 u=jon |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-14 16:54:15,830 p=7901 u=jon |  PLAY [localhost] ***************************************************************
+2016-09-14 16:54:15,863 p=7901 u=jon |  TASK [print instance ids] ******************************************************
+2016-09-14 16:54:15,921 p=7901 u=jon |  [DEPRECATION WARNING]: Skipping task due to undefined Error, in the future this will be a fatal error.: 'dict object' has no attribute 'ansible_ec2_instance_id'.
+This
+ feature will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2016-09-14 16:54:15,944 p=7901 u=jon |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'item' is undefined\n\nThe error appears to have been in '/Users/jon/src/sandbox/printids.yaml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: print instance ids\n      ^ here\n"}
+2016-09-14 16:54:15,951 p=7901 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-14 16:54:15,952 p=7901 u=jon |  PLAY RECAP *********************************************************************
+2016-09-14 16:54:15,952 p=7901 u=jon |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   

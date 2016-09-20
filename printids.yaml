@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: print instance ids
+      debug: msg="{{ item }}"
+#     with_items: '{{hostvars[ec2][ec2_id]}}'
+      with_items: "{{hostvars[inventory_hostname]['ansible_ec2_instance_id']}}"
