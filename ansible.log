@@ -52,3 +52,105 @@ This
 2016-09-14 16:54:15,951 p=7901 u=jon |  NO MORE HOSTS LEFT *************************************************************
 2016-09-14 16:54:15,952 p=7901 u=jon |  PLAY RECAP *********************************************************************
 2016-09-14 16:54:15,952 p=7901 u=jon |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-20 14:13:49,350 p=1788 u=jon |  PLAY [all] *********************************************************************
+2016-09-20 14:13:49,386 p=1788 u=jon |  TASK [setup] *******************************************************************
+2016-09-20 14:13:51,283 p=1788 u=jon |  fatal: [52.33.29.62]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,311 p=1788 u=jon |  fatal: [52.41.128.21]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,312 p=1788 u=jon |  fatal: [54.68.232.199]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,441 p=1788 u=jon |  fatal: [52.35.0.44]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,464 p=1788 u=jon |  fatal: [52.11.189.72]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,481 p=1788 u=jon |  fatal: [52.38.173.166]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,603 p=1788 u=jon |  fatal: [52.36.125.141]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,604 p=1788 u=jon |  fatal: [52.36.219.60]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,611 p=1788 u=jon |  fatal: [52.27.35.188]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,629 p=1788 u=jon |  fatal: [52.38.109.57]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:51,698 p=1788 u=jon |  fatal: [52.10.124.247]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:59,928 p=1788 u=jon |  fatal: [52.89.222.218]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:59,942 p=1788 u=jon |  fatal: [52.89.170.248]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:59,957 p=1788 u=jon |  fatal: [52.40.245.192]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:59,959 p=1788 u=jon |  fatal: [52.43.102.35]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:13:59,967 p=1788 u=jon |  PLAY RECAP *********************************************************************
+2016-09-20 14:13:59,968 p=1788 u=jon |  52.10.124.247              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,969 p=1788 u=jon |  52.11.189.72               : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,970 p=1788 u=jon |  52.27.35.188               : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,971 p=1788 u=jon |  52.33.29.62                : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,971 p=1788 u=jon |  52.35.0.44                 : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,972 p=1788 u=jon |  52.36.125.141              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,972 p=1788 u=jon |  52.36.219.60               : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,973 p=1788 u=jon |  52.38.109.57               : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,973 p=1788 u=jon |  52.38.173.166              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,973 p=1788 u=jon |  52.40.245.192              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,974 p=1788 u=jon |  52.41.128.21               : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,974 p=1788 u=jon |  52.43.102.35               : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,974 p=1788 u=jon |  52.89.170.248              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,975 p=1788 u=jon |  52.89.222.218              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:13:59,975 p=1788 u=jon |  54.68.232.199              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:15:00,817 p=2014 u=jon |  PLAY [all] *********************************************************************
+2016-09-20 14:15:00,866 p=2014 u=jon |  TASK [setup] *******************************************************************
+2016-09-20 14:15:01,363 p=2014 u=jon |  fatal: [vyos.lan]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:15:02,001 p=2014 u=jon |  ok: [localhost]
+2016-09-20 14:15:04,037 p=2014 u=jon |  fatal: [52.36.219.60]: FAILED! => {"failed": true, "msg": "failed to transfer file to /root/.ansible/tmp/ansible-tmp-1474395301.29-191945887821108/setup:\nsftp> put /var/folders/pm/7k6nrx3j1rd5fny66q4wpy1r0000gn/T/tmph0bb3D /root/.ansible/tmp/ansible-tmp-1474395301.29-191945887821108/setup\n\nremote open(\"/root/.ansible/tmp/ansible-tmp-1474395301.29-191945887821108/setup\"): No such file or directory\r\n"}
+2016-09-20 14:15:04,572 p=2014 u=jon |  ok: [52.11.189.72]
+2016-09-20 14:15:04,788 p=2014 u=jon |  fatal: [52.38.109.57]: FAILED! => {"changed": false, "failed": true, "module_stderr": "", "module_stdout": "sh: /usr/bin/python: not found\r\n", "msg": "MODULE FAILURE", "parsed": false}
+2016-09-20 14:15:04,949 p=2014 u=jon |  ok: [52.36.125.141]
+2016-09-20 14:15:05,676 p=2014 u=jon |  ok: [52.38.173.166]
+2016-09-20 14:15:05,686 p=2014 u=jon |  TASK [creating inventory_dir] **************************************************
+2016-09-20 14:15:06,302 p=2014 u=jon |  ok: [localhost]
+2016-09-20 14:15:07,526 p=2014 u=jon |  changed: [52.38.173.166]
+2016-09-20 14:15:07,562 p=2014 u=jon |  changed: [52.36.125.141]
+2016-09-20 14:15:07,564 p=2014 u=jon |  changed: [52.11.189.72]
+2016-09-20 14:15:07,574 p=2014 u=jon |  TASK [write host info to file] *************************************************
+2016-09-20 14:15:08,262 p=2014 u=jon |  changed: [localhost]
+2016-09-20 14:15:09,368 p=2014 u=jon |  changed: [52.38.173.166]
+2016-09-20 14:15:09,408 p=2014 u=jon |  changed: [52.11.189.72]
+2016-09-20 14:15:09,691 p=2014 u=jon |  changed: [52.36.125.141]
+2016-09-20 14:15:09,702 p=2014 u=jon |  TASK [copy] ********************************************************************
+2016-09-20 14:15:10,734 p=2014 u=jon |  ok: [localhost -> localhost]
+2016-09-20 14:15:10,925 p=2014 u=jon |  changed: [52.36.125.141 -> localhost]
+2016-09-20 14:15:10,937 p=2014 u=jon |  changed: [52.38.173.166 -> localhost]
+2016-09-20 14:15:10,966 p=2014 u=jon |  changed: [52.11.189.72 -> localhost]
+2016-09-20 14:15:10,975 p=2014 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-20 14:15:10,975 p=2014 u=jon |  PLAY RECAP *********************************************************************
+2016-09-20 14:15:10,975 p=2014 u=jon |  52.11.189.72               : ok=4    changed=3    unreachable=0    failed=0   
+2016-09-20 14:15:10,975 p=2014 u=jon |  52.36.125.141              : ok=4    changed=3    unreachable=0    failed=0   
+2016-09-20 14:15:10,976 p=2014 u=jon |  52.36.219.60               : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-20 14:15:10,976 p=2014 u=jon |  52.38.109.57               : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-20 14:15:10,976 p=2014 u=jon |  52.38.173.166              : ok=4    changed=3    unreachable=0    failed=0   
+2016-09-20 14:15:10,976 p=2014 u=jon |  localhost                  : ok=4    changed=1    unreachable=0    failed=0   
+2016-09-20 14:15:10,976 p=2014 u=jon |  vyos.lan                   : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-20 14:17:00,962 p=2619 u=jon |  PLAY [all] *********************************************************************
+2016-09-20 14:17:01,010 p=2619 u=jon |  TASK [setup] *******************************************************************
+2016-09-20 14:17:01,490 p=2619 u=jon |  fatal: [vyos.lan]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh.", "unreachable": true}
+2016-09-20 14:17:02,092 p=2619 u=jon |  ok: [localhost]
+2016-09-20 14:17:04,334 p=2619 u=jon |  fatal: [52.38.109.57]: FAILED! => {"failed": true, "msg": "failed to transfer file to /root/.ansible/tmp/ansible-tmp-1474395421.44-27050898176216/setup:\nsftp> put /var/folders/pm/7k6nrx3j1rd5fny66q4wpy1r0000gn/T/tmp3cBj5j /root/.ansible/tmp/ansible-tmp-1474395421.44-27050898176216/setup\n\nremote open(\"/root/.ansible/tmp/ansible-tmp-1474395421.44-27050898176216/setup\"): No such file or directory\r\n"}
+2016-09-20 14:17:04,764 p=2619 u=jon |  ok: [52.11.189.72]
+2016-09-20 14:17:04,955 p=2619 u=jon |  ok: [52.38.173.166]
+2016-09-20 14:17:04,977 p=2619 u=jon |  ok: [52.36.125.141]
+2016-09-20 14:17:05,460 p=2619 u=jon |  ok: [52.36.219.60]
+2016-09-20 14:17:05,470 p=2619 u=jon |  TASK [creating inventory_dir] **************************************************
+2016-09-20 14:17:06,222 p=2619 u=jon |  ok: [localhost]
+2016-09-20 14:17:07,470 p=2619 u=jon |  ok: [52.36.125.141]
+2016-09-20 14:17:07,488 p=2619 u=jon |  ok: [52.38.173.166]
+2016-09-20 14:17:07,514 p=2619 u=jon |  ok: [52.11.189.72]
+2016-09-20 14:17:07,664 p=2619 u=jon |  changed: [52.36.219.60]
+2016-09-20 14:17:07,672 p=2619 u=jon |  TASK [write host info to file] *************************************************
+2016-09-20 14:17:08,329 p=2619 u=jon |  changed: [localhost]
+2016-09-20 14:17:09,528 p=2619 u=jon |  changed: [52.38.173.166]
+2016-09-20 14:17:09,564 p=2619 u=jon |  changed: [52.11.189.72]
+2016-09-20 14:17:09,578 p=2619 u=jon |  changed: [52.36.125.141]
+2016-09-20 14:17:09,914 p=2619 u=jon |  changed: [52.36.219.60]
+2016-09-20 14:17:09,923 p=2619 u=jon |  TASK [copy] ********************************************************************
+2016-09-20 14:17:11,166 p=2619 u=jon |  changed: [52.38.173.166 -> localhost]
+2016-09-20 14:17:11,168 p=2619 u=jon |  changed: [52.36.125.141 -> localhost]
+2016-09-20 14:17:11,175 p=2619 u=jon |  changed: [52.36.219.60 -> localhost]
+2016-09-20 14:17:11,182 p=2619 u=jon |  changed: [localhost -> localhost]
+2016-09-20 14:17:11,226 p=2619 u=jon |  changed: [52.11.189.72 -> localhost]
+2016-09-20 14:17:11,239 p=2619 u=jon |  NO MORE HOSTS LEFT *************************************************************
+2016-09-20 14:17:11,240 p=2619 u=jon |  PLAY RECAP *********************************************************************
+2016-09-20 14:17:11,241 p=2619 u=jon |  52.11.189.72               : ok=4    changed=2    unreachable=0    failed=0   
+2016-09-20 14:17:11,241 p=2619 u=jon |  52.36.125.141              : ok=4    changed=2    unreachable=0    failed=0   
+2016-09-20 14:17:11,241 p=2619 u=jon |  52.36.219.60               : ok=4    changed=3    unreachable=0    failed=0   
+2016-09-20 14:17:11,241 p=2619 u=jon |  52.38.109.57               : ok=0    changed=0    unreachable=0    failed=1   
+2016-09-20 14:17:11,241 p=2619 u=jon |  52.38.173.166              : ok=4    changed=2    unreachable=0    failed=0   
+2016-09-20 14:17:11,241 p=2619 u=jon |  localhost                  : ok=4    changed=2    unreachable=0    failed=0   
+2016-09-20 14:17:11,242 p=2619 u=jon |  vyos.lan                   : ok=0    changed=0    unreachable=1    failed=0   

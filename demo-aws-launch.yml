@@ -21,6 +21,7 @@
      region="{{ ec2_region }}"
      instance_tags="{'ansible_group':'{{ ec2_tag_webservers }}', 'type':'{{ ec2_instance_type }}', 'group':'{{ ec2_security_group }}', 'Name':'demo_''{{ tower_user_name }}'}"
      count="{{ ec2_instance_count }}"
+     tenancy="{{ ec2_tenancy }}"
     register: ec2
 
   - name: Launch database instance
@@ -36,6 +37,7 @@
      region="{{ ec2_region }}"
      instance_tags="{'ansible_group':'{{ ec2_tag_dbservers }}', 'type':'{{ ec2_instance_type }}', 'group':'{{ ec2_security_group }}', 'Name':'demo_''{{ tower_user_name }}'}"
      count="1"
+     tenancy="{{ ec2_tenancy }}"
     register: ec2
 
   - name: Launch load balancing instance
@@ -51,6 +53,7 @@
      region="{{ ec2_region }}"
      instance_tags="{'ansible_group':'{{ ec2_tag_lbservers }}', 'type':'{{ ec2_instance_type }}', 'group':'{{ ec2_security_group }}', 'Name':'demo_''{{ tower_user_name }}'}"
      count="1"
+     tenancy="{{ ec2_tenancy }}"
     register: ec2
 
   - name: Launch monitoring instance
@@ -66,6 +69,7 @@
      region="{{ ec2_region }}"
      instance_tags="{'ansible_group':'{{ ec2_tag_monitoring }}', 'type':'{{ ec2_instance_type }}', 'group':'{{ ec2_security_group }}', 'Name':'demo_''{{ tower_user_name }}'}"
      count="1"
+     tenancy="{{ ec2_tenancy }}"
     register: ec2
 
 
