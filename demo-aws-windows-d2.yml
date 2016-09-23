@@ -8,5 +8,5 @@
     module: ec2
     instance_tags:
       Name: "demo_{{ tower_user_name }}_windows"
-    state: terminated
+    state: absent
 
