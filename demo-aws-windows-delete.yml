@@ -1,4 +1,16 @@
 ---
+- name: gather EC2 facts
+  hosts: "{{ ec2_hosts }}"
+  gather_facts: false 
+
+  vars:
+    ec2_region: us-west-2
+    ec2_hosts: tag_Name_demo_{{ tower_user_name }}_windows
+
+  tasks:
+  - name: gather facts 
+    ec2_facts:
+
 - name: terminate hosts
   hosts: "{{ ec2_hosts }}" 
   gather_facts: false
@@ -9,12 +21,10 @@
 
   tasks:
   - name: terminate EC2 hosts
-    hosts: localhost
-    connection: local
     ec2: >
       region="{{ ec2_region }}"
       instance_ids="{{ item }}"
       state=absent
       wait=True
-    with_items: "{{hostvars[inventory_hostname]['ec2_id']}}"
+    with_items: "{{hostvars[inventory_hostname]['ansible_ec2_instance_id']}}"
 
