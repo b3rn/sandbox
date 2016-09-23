@@ -8,7 +8,7 @@
     ec2_hosts: "tag_Name_demo_{{ tower_user_name }}_windows"
 
 - name: terminate hosts
-  hosts: "{{ ec2_hosts }}" 
+  hosts: localhost
   gather_facts: false
   connection: local  
 
