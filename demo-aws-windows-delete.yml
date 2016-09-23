@@ -9,6 +9,7 @@
 
   tasks:
   - name: terminate EC2 hosts
+    hosts: localhost
     connection: local
     ec2: >
       region="{{ ec2_region }}"
