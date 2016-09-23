@@ -21,6 +21,7 @@
 
   tasks:
   - name: terminate EC2 hosts
+    connection: local
     ec2: >
       region="{{ ec2_region }}"
       instance_ids="{{ item }}"
