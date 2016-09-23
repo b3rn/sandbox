@@ -1,6 +1,5 @@
 ---
-- name: Terminate instances
-  hosts: localhost
+- hosts: localhost
 
   tasks:
   - name: terminate hosts
