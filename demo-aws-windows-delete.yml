@@ -1,16 +1,4 @@
 ---
-- name: gather EC2 facts
-  hosts: "{{ ec2_hosts }}"
-  gather_facts: false 
-
-  vars:
-    ec2_region: us-west-2
-    ec2_hosts: tag_Name_demo_{{ tower_user_name }}_windows
-
-  tasks:
-  - name: gather facts 
-    ec2_facts:
-
 - name: terminate hosts
   hosts: "{{ ec2_hosts }}" 
   gather_facts: false
