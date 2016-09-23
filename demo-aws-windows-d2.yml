@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+  strategy: debug
   connection: local
   gather_facts: no
 
