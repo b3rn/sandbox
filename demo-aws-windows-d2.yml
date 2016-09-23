@@ -5,8 +5,8 @@
   tasks:
   - name: terminate hosts
     local_action:
-    module: ec2
-    instance_tags:
-      Name: "demo_{{ tower_user_name }}_windows"
-    state: absent
+      module: ec2
+      instance_tags:
+        Name: "demo_{{ tower_user_name }}_windows"
+      state: absent
 
