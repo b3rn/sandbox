@@ -5,31 +5,26 @@
 
   vars:
     ec2_region: us-west-2
-    ec2_hosts: "tag_Name_demo_{{ tower_user_name }}_windows"
+    ec2_hosts: tag_Name_demo_{{ tower_user_name }}_windows
 
-#- name: terminate hosts
-#  hosts: localhost
-#  connection: local  
-#
-#  vars:
-#    ec2_hosts: "tag_Name_demo_{{ tower_user_name }}_windows"
-#
-#  tasks:
-#  - name: terminate EC2 hosts
-#    ec2: >
-#      region="{{ ec2_region }}"
-#      instance_ids="{{ item }}"
-#      state=absent
-#      wait=True
-#    with_items: "{{hostvars[inventory_hostname]['ec2_id']}}"
-#
-  - name: terminate single instance
-     hosts: "tag_Name_demo_{{ tower_user_name }}_windows"
-     tasks:
-     - action: ec2_facts
-     - name: terminating single instance
-       local_action:
-         module: ec2
-         state: absent
-         region: us-west-2
-         instance_ids: "{{ ansible_ec2_instance_id }}"
+  tasks:
+  - name: gather facts 
+    ec2_facts:
+
+- name: terminate hosts
+  hosts: "{{ ec2_hosts }}" 
+  gather_facts: false
+  connection: local  
+
+  vars:
+    ec2_hosts: tag_Name_demo_{{ tower_user_name }}_windows
+
+  tasks:
+  - name: terminate EC2 hosts
+    ec2: >
+      region="{{ ec2_region }}"
+      instance_ids="{{ item }}"
+      state=absent
+      wait=True
+    with_items: "{{hostvars[inventory_hostname]['ansible_ec2_instance_id']}}"
+
