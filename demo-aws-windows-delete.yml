@@ -9,7 +9,6 @@
 
 - name: terminate hosts
   hosts: localhost
-  gather_facts: false
   connection: local  
 
   vars:
