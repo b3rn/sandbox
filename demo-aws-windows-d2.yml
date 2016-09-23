@@ -1,8 +1,7 @@
 - name: Terminate instances
-  hosts: localhost
-  connection: local
-  tasks:
-    - name: Terminate instances that were previously launched
-      ec2:
-        state: 'absent'
-        instance_ids: '{{ ec2.instance_ids }}'
+  local_action:
+    module: ec2
+    instance_tags:
+      Name: "demo_{{ tower_user_name }}_windows"
+    state: terminated
+
