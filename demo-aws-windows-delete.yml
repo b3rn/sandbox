@@ -23,9 +23,9 @@
 #      wait=True
 #    with_items: "{{hostvars[inventory_hostname]['ec2_id']}}"
 #
-- name: terminate single instance
-   hosts: "tag_Name_demo_{{ tower_user_name }}_windows"
-   tasks:
+  - name: terminate single instance
+     hosts: "tag_Name_demo_{{ tower_user_name }}_windows"
+     tasks:
      - action: ec2_facts
      - name: terminating single instance
        local_action:
