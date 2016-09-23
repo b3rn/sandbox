@@ -3,6 +3,9 @@
   connection: local
 
   tasks:
+  - name: remote facts
+    ec2_remote_facts:
+
   - name: terminate hosts
     local_action:
       module: ec2
