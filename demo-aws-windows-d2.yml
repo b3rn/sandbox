@@ -4,6 +4,7 @@
 
   tasks:
   - name: remote facts
+    connection: local
     ec2_remote_facts:
 
   - name: terminate hosts
