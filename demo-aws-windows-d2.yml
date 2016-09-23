@@ -1,6 +1,5 @@
 ---
-- hosts: localhost
-  strategy: debug
+- hosts: all
   connection: local
   gather_facts: no
 
@@ -10,9 +9,6 @@
     ec2_remote_facts:
 
   - name: terminate hosts
-    local_action:
-      module: ec2
-      instance_tags:
-        Name: "demo_{{ tower_user_name }}_windows"
+    local_action: ec2 instance_tags=Name: "demo_{{ tower_user_name }}_windows"
       state: absent
 
