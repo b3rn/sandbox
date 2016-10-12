@@ -9,4 +9,5 @@
     - name: write host info to file
       shell: 'uname -a ; cat /etc/resolv.conf'
       register: Host_Info
+    - debug: var=Host_Info
     - local_action: copy content="{{ Host_Info.stdout }}" dest="/tmp/inventory/host-info.txt"
