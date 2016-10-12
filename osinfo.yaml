@@ -7,7 +7,8 @@
       file: path=/tmp/inventory state=directory mode=0755
 
     - name: write host info to file
-      command: 'uname -a ; cat /etc/resolv.conf'
+      shell: 'uname -a ; cat /etc/resolv.conf'
       register: Host_Info
     - debug: var=Host_Info
-    - local_action: copy content="{{ Host_Info.stdout }}" dest="/tmp/inventory/host-info.txt"
+    - name: write to file
+      shell:  "cat {{ Host_Info.stdout }} > /tmp/inventory/host-info.txt"
